@@ -14,7 +14,7 @@ An optimization of the original ControlNet [1] paper that sparsifies ControlNet 
 
 ## Results: Sparse ControlNet Conditioning
 
-We evaluate 100 prompts with matched seeds and control images. We then compare conditioning schedules using the proportion of full ControlNet's structural improvement retained, as measured by Chamfer Distance.
+We evaluate 60 prompts with matched seeds and control images. We then compare conditioning schedules using the proportion of full ControlNet's structural improvement retained, as measured by Chamfer Distance.
 
 | Setting                    | ControlNet Calls | Chamfer Distance Improvement|
 | -------------------------- | ---------------: | --------------------------: |
