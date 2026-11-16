@@ -1,0 +1,43 @@
+{
+ "none": {
+  "gen_s_median": 1.9979898000019602,
+  "gen_s_q25": 1.72436175000621,
+  "gen_s_q75": 2.3317728000110947,
+  "control_s_median": 0.0,
+  "n": 15,
+  "speedup_vs_full": 1.5190295265546816
+ },
+ "full": {
+  "gen_s_median": 3.0350054999580607,
+  "gen_s_q25": 2.5196926500066184,
+  "gen_s_q75": 4.723497049999423,
+  "control_s_median": 1.0709978999802843,
+  "n": 15,
+  "speedup_vs_full": 1.0
+ },
+ "early": {
+  "gen_s_median": 2.775641399959568,
+  "gen_s_q25": 2.102435050008353,
+  "gen_s_q75": 3.6023007499752566,
+  "control_s_median": 0.42535239993594587,
+  "n": 15,
+  "speedup_vs_full": 1.093442942594195
+ },
+ "low_noise": {
+  "gen_s_median": 2.1860353999654762,
+  "gen_s_q25": 2.139018549991306,
+  "gen_s_q75": 2.8887419500097167,
+  "control_s_median": 0.43605010001920164,
+  "n": 15,
+  "speedup_vs_full": 1.3883606367975523
+ },
+ "combined": {
+  "gen_s_median": 2.169179600023199,
+  "gen_s_q25": 2.0982540500117466,
+  "gen_s_q75": 3.286133149988018,
+  "control_s_median": 0.4435586000327021,
+  "n": 15,
+  "speedup_vs_full": 1.3991490146438783
+ },
+ "_note": "interleaved repeats, one prompt; gen_s excludes text encoding and VAE decode"
+}

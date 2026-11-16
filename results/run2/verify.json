@@ -1,0 +1,17 @@
+[
+ {
+  "prompt": "a market stall in a snowy field, oil painting",
+  "mean_abs_diff": 0.0,
+  "max_abs_diff": 0.0
+ },
+ {
+  "prompt": "a stone bridge by a calm lake, photograph, natural light",
+  "mean_abs_diff": 0.0,
+  "max_abs_diff": 0.0
+ },
+ {
+  "prompt": "a rocking chair by a calm lake, detailed pencil drawing colored",
+  "mean_abs_diff": 0.0,
+  "max_abs_diff": 0.0
+ }
+]

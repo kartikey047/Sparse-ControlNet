@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sparsecn"
+version = "0.1.0"
+description = "Running ControlNet on only some denoising steps, and measuring how much control survives"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy", "torch", "scipy", "opencv-python-headless"]
+
+[project.optional-dependencies]
+experiment = ["diffusers", "transformers", "accelerate", "matplotlib", "pillow"]
+dev = ["pytest", "diffusers", "transformers", "accelerate"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
