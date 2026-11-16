@@ -56,3 +56,11 @@ pip install -e ".[experiment]"
 python -m sparsecn.experiment run --out runs/run1 --budget-min 120
 python -m sparsecn.experiment summarize --out runs/run1
 ```
+
+## Works Cited
+
+[1] Zhang, L., Rao, A., & Agrawala, M. (2023). [Adding Conditional Control to Text-to-Image Diffusion Models](https://arxiv.org/abs/2302.05543). *Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)*.
+
+[2] Falck, F., et al. (2025). [A Fourier Space Perspective on Diffusion Models](https://arxiv.org/abs/2505.11278). *arXiv preprint arXiv:2505.11278*.
+
+[3] Rombach, R., et al. (2022). [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752). *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*.
