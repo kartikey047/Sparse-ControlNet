@@ -25,20 +25,13 @@ At equal compute, conditioning during the first 6 denoising steps retains substa
 
 ## Examples
 
-The examples below were picked to show the effect clearly, so they are the best cases, not typical ones.
+In most cases, the 6-step version keeps the main layout (buildings, towers, bridges
+in the right places) but drifts in the details, and it follows fine texture edges much less than full
+ControlNet. However, the resulting image is still incredibly similar due to most of the structural layout
+being defined in early denoise steps.
 
 ![Full vs high-noise-only ControlNet, teapot by a lake](results/gifs/prompt_0030.gif)
 ![Full vs high-noise-only ControlNet, wooden house in a desert](results/gifs/prompt_0036.gif)
-
-Contact sheets for the first 60 prompts (control edges, full ControlNet, first 6 steps), unselected:
-[sheet 1](results/samples60/sheet1.jpg), [2](results/samples60/sheet2.jpg),
-[3](results/samples60/sheet3.jpg), [4](results/samples60/sheet4.jpg).
-
-![Contact sheet: control edges, full ControlNet, first 6 steps](results/samples60/sheet1.jpg)
-
-On the unselected sheets the 6-step version usually keeps the main layout (buildings, towers, bridges
-in the right places) but drifts in the details, and it follows fine texture edges much less than full
-ControlNet.
 
 ## Code
 
@@ -61,5 +54,3 @@ pip install -e ".[experiment]"
 python -m sparsecn.experiment run --out runs/run1 --budget-min 120
 python -m sparsecn.experiment summarize --out runs/run1
 ```
-
-The experiment needs a CUDA GPU and downloads about 3.5 GB of weights from the Hugging Face Hub.
