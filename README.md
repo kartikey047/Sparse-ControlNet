@@ -8,11 +8,12 @@ how much of the control signal survives.
 (late) steps carry very little.** With the same number of ControlNet calls, running it on the first
 steps keeps far more of the control than running it on the last steps.
 
-![Full ControlNet fading to the high-noise-only result, three prompts](results/gifs/side_by_side.gif)
+![Canny control, full ControlNet, then ControlNet on the first 6 steps only, six prompts](results/gifs/side_by_side.gif)
 
-*Full ControlNet (20/20 steps) fading to ControlNet on the first 6 steps only, for three prompts. Same
-prompt, control image and seed in each panel. In the lighthouse panel the tower, horizon and island stay
-in place, while the tree and the fine details change. These are good cases, not typical ones.*
+*Canny control image -> full ControlNet (20/20 steps) -> Canny -> ControlNet on the first 6 steps only
+(high noise), for six prompts. Same prompt, control image and seed in each panel. The 6-step version
+usually keeps the main layout (bridge, chair, lighthouse, van, castle, skyline) but changes details and
+sometimes the viewpoint. These six were picked by hand as clear examples, not typical ones.*
 
 ## Setup
 
