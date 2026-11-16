@@ -28,7 +28,9 @@ At equal compute, conditioning during the first 6 denoising steps retains substa
 In most cases, the 6-step version keeps the main layout (buildings, towers, bridges
 in the right places) but drifts in the details, and it follows fine texture edges much less than full
 ControlNet. However, the resulting image is still incredibly similar due to most of the structural layout
-being defined in early denoise steps.
+being defined in early denoise steps. Simpler layouts thus suffer much less from sparsification. A potential
+extension of this work could use dynamic sparsification of ControlNet calls through approximated complexity in the
+conditioning signal.
 
 ![Full vs high-noise-only ControlNet, teapot by a lake](results/gifs/prompt_0030.gif)
 ![Full vs high-noise-only ControlNet, wooden house in a desert](results/gifs/prompt_0036.gif)
